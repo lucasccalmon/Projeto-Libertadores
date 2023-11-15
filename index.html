@@ -6,12 +6,16 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <title>Fluminense - Libertadores 2023</title>
+    <script>
+      document.documentElement.className += ' js';
+    </script>
   </head>
   <body>
     <header class="header">
       <img class="FluH" src="img/Fluminensehead.png" alt="Fluminense sócio" />
       <img class="LibH" src="img/Liberta.png" alt="Libertadores" />
-      <button class="associe">SEJA SÓCIO</button>
+      <!-- <button class="associe">SEJA SÓCIO</button> -->
+      <a class="associe" data-modal="abrir" href="login.html">SEJA SÓCIO</a>
     </header>
     <main aria-label="Introdução">
       <div class="campeao">
@@ -231,7 +235,8 @@
           <li>
             <img src="img/FESTA.png" alt="" />
           </li>
-        </ul></div>
+        </ul>
+      </div>
         <div class="noticias-descricao js-tabcontent">
           <section>
             <h2>CLASSIFICADOS</h2>
@@ -242,6 +247,8 @@
               Libertadores de 2024. O Mundial de Clubes começa para o Fluminense
               dia 18 de dezembro, nas semi-finais.
             </p>
+          </section>
+          <section>
             <h2>FESTA NO RIO</h2>
             <p>
               Com mais de 300 mil tricolores presentes, a festa durou cerca de 4
@@ -258,5 +265,21 @@
     <footer>
       <img src="img/Fluminensefoot.png" alt="" />
     </footer>
+    <section class="modal-container" data-modal="container">
+      <div class="modal">
+        <button data-modal="fechar" class="fechar">X</button>
+        <div class="display">
+          <h3 class="somos">JÁ SOMOS</h3><h4 class="numerosocio">68.369</h4> <h3 class="socios">SÓCIOS</h3>
+          <p>Preencha seus dados para prosseguir com o cadastro (ficticio)</p>
+        </div>
+          
+          <label for="email">Email</label>
+          <input type="text" for="email" id="email">
+          <label for="senha">Senha</label>
+          <input type="password" for="senha" id="senha">
+          <button type="submit">ENTRAR</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
