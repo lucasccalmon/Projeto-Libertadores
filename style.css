@@ -166,6 +166,37 @@ header::after {
   left: 99.9%;
   bottom: -30.5rem;
 }
+.partida-titulo2 {
+  color: #fff;
+  text-align: center;
+  font-size: 2.375rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  margin-top: 1.87rem;
+  position: relative;
+}
+.partida-titulo2::before {
+  content: "";
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  width: 200%;
+  left: -100%;
+  height: 0.3125rem;
+  top: -34px;
+}
+.partida-titulo2::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  background-color: #fff;
+  width: 0.125rem;
+  height: 35rem;
+  left: -1px;
+  bottom: -30.5rem;
+}
+
 .partida-data {
   color: #fff;
   margin-top: 0.63rem;
@@ -199,6 +230,8 @@ header::after {
   justify-content: center;
   display: flex;
   padding: 4.15rem 0rem 4.15rem 0rem;
+  grid-column: 1;
+  grid-row: 1;
 }
 .p2-texto {
   background: #88002a;
