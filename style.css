@@ -61,7 +61,7 @@ header::after {
   background-color: #8c1827;
   width: 100%;
   height: 10px;
-  top: 145px;
+  top: 10rem;
 }
 
 .associe {
@@ -73,10 +73,11 @@ header::after {
   border-radius: 10px;
   cursor: pointer;
   color: #8c1827;
+  font-size: 1.5rem;
   font-weight: 900;
 }
 
-.Campeao {
+.campeao {
   height: 1200px;
   background-image: url("./img/campeoestaca.png");
   background-repeat: no-repeat;
@@ -84,9 +85,10 @@ header::after {
   background-position: 50%;
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
-.Campeao h1 {
+.campeao h1 {
   position: relative;
   width: 91.625rem;
   top: 20px;
@@ -97,4 +99,105 @@ header::after {
   font-style: normal;
   font-weight: 700;
   line-height: 100%; /* 4.875rem */
+}
+
+.campeoes {
+  position: relative;
+  background: #00321c;
+  padding: 50px;
+}
+
+.campeoes h2 {
+  padding-bottom: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+}
+
+.campeoes-texto {
+  color: #f8f8f8;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  padding: 0rem 8.63rem 4.87rem 8.63rem;
+  margin-right: 0px;
+}
+
+.partida {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.p1-texto {
+  background: #00693d;
+}
+.partida-titulo {
+  color: #fff;
+  text-align: center;
+  font-size: 2.375rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  margin-top: 1.87rem;
+  position: relative;
+}
+.partida-titulo::before {
+  content: "";
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  width: 200%;
+  height: 0.3125rem;
+  top: -34px;
+}
+.partida-titulo::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  background-color: #fff;
+  width: 0.125rem;
+  height: 35rem;
+  left: 99.9%;
+  bottom: -30.5rem;
+}
+.partida-data {
+  color: #fff;
+  margin-top: 0.63rem;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.partida-texto {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  display: flex;
+  margin: 7rem 3.5rem;
+}
+
+.p1-img {
+  background: #88002a;
+  justify-content: center;
+  display: flex;
+  padding: 4.15rem 0rem 4.15rem 0rem;
+}
+
+.p2-img {
+  background: #00693d;
+  justify-content: center;
+  display: flex;
+  padding: 4.15rem 0rem 4.15rem 0rem;
+}
+.p2-texto {
+  background: #88002a;
 }
