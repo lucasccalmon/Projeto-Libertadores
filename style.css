@@ -201,3 +201,67 @@ header::after {
 .p2-texto {
   background: #88002a;
 }
+
+.noticiastudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.noticiastudo img {
+  height: 410px;
+  width: 680px;
+}
+
+.noticiastudo p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 1.5rem */
+}
+.noticiastudo h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%; /* 4rem */
+  margin-bottom: 2.5rem;
+}
+.noticias-lista {
+  height: 410px;
+  overflow-y: scroll;
+}
+.noticias-lista::-webkit-scrollbar {
+  width: 18px;
+}
+.noticias-lista::-webkit-scrollbar-thumb {
+  background: #8c1827;
+  border-left: 4px solid #00321c;
+  border-right: 4px solid #00321c;
+}
+
+footer {
+  background-color: #012013;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 1.5rem;
+}
+/* footer img {
+  justify-self: center;
+} */
+footer::after {
+  content: "Projeto pessoal para portfólio. Feito por Lucas Calmon.";
+  color: #ffffff9c;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 100%; /* 1rem */
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+}
