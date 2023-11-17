@@ -454,3 +454,398 @@ footer::after {
   font-weight: 600;
   width: 100%;
 }
+
+/* media querries: abaixo de 1600, as barras do grid quebram
+abaixo de 1400, recomendado diminuir tamanho das imgs e fontes
+abaixo de 1200 ou 1000, fazer mobile*/
+
+@media (max-width: 1600px) {
+  .partida-titulo {
+    font-size: 2.125rem;
+    margin-top: 1.87rem;
+  }
+  .partida-titulo2 {
+    font-size: 2.125rem;
+    margin-top: 1.87rem;
+  }
+  .partida-data {
+    margin-top: 0.63rem;
+    font-size: 1.25rem;
+  }
+  .partida-texto {
+    font-size: 1.75rem;
+    margin: 7rem 3.5rem;
+  }
+  .p1-img {
+    padding: 4rem 0rem 4rem 0rem;
+  }
+
+  .p2-img {
+    padding: 4rem 0rem 4rem 0rem;
+  }
+}
+@media (max-width: 1400px) {
+  .p1-img img {
+    padding: 0rem 0rem 0rem 0rem;
+    width: 500px;
+    height: 300px;
+  }
+
+  .p2-img img {
+    padding: 0rem 0rem 0rem 0rem;
+    width: 500px;
+    height: 300px;
+  }
+  .partida-titulo {
+    font-size: 2rem;
+  }
+  .partida-titulo2 {
+    font-size: 2rem;
+  }
+  .partida-data {
+    margin-top: 0.63rem;
+    font-size: 1.125rem;
+  }
+  .partida-texto {
+    font-size: 1.375rem;
+    margin: 5rem 3.5rem;
+  }
+  .partida-titulo::after {
+    height: 28.6rem;
+
+    bottom: -24.3rem;
+  }
+  .partida-titulo2::after {
+    height: 25rem;
+    left: -1px;
+    bottom: -22.6rem;
+  }
+}
+@media (max-width: 1150px) {
+  .partida-titulo {
+    font-size: 1.7rem;
+  }
+  .partida-titulo2 {
+    font-size: 1.7rem;
+  }
+  .partida-titulo::after {
+    height: 26.6rem;
+    bottom: -22.7rem;
+  }
+  .partida-titulo2::after {
+    left: -1px;
+    height: 26.7rem;
+    bottom: -22.6rem;
+  }
+  .noticiastudo p {
+    font-size: 1rem;
+    width: 25rem;
+  }
+  .noticiastudo h2 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+  }
+  @media (max-width: 1080px) {
+    .partida-titulo {
+      margin-top: 1rem;
+    }
+    .partida-titulo2 {
+      margin-top: 1rem;
+    }
+    .partida-titulo::after {
+      height: 26.8rem;
+      bottom: -23.8rem;
+    }
+    .partida-titulo2::after {
+      left: -1px;
+      height: 26.8rem;
+      bottom: -23.8rem;
+    }
+    .partida-titulo::before {
+      width: 200%;
+      height: 0.3125rem;
+      top: -20px;
+    }
+    .partida-titulo2::before {
+      left: -100%;
+      height: 0.3125rem;
+      top: -20px;
+    }
+  }
+  @media (max-width: 1000px) {
+    .associe {
+      padding: 15px 28px;
+      margin: 40px 50px 40px 0px;
+      text-align: center;
+      font-size: 1rem;
+    }
+    header::after {
+      display: none;
+    }
+    .p1-img img {
+      padding: 0rem 0rem 0rem 0rem;
+      width: 400px;
+      height: 250px;
+    }
+
+    .p2-img img {
+      padding: 0rem 0rem 0rem 0rem;
+      width: 400px;
+      height: 250px;
+    }
+    .partida-texto {
+      font-size: 1.375rem;
+      margin: 4rem 2.5rem;
+    }
+    .partida {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 275px;
+    }
+    .partida-titulo::after {
+      content: "";
+      display: flex;
+      position: relative;
+      background-color: #fff;
+      width: 100%;
+      height: 0.3125rem;
+      top: 226px;
+      left: 0px;
+    }
+    .partida-titulo2::after {
+      content: "";
+      display: flex;
+      position: relative;
+      background-color: #fff;
+      width: 100%;
+      height: 0.3125rem;
+      top: 226px;
+      left: 0px;
+    }
+    .partida-titulo::before {
+      width: 100%;
+      height: 0.3125rem;
+      top: -20px;
+    }
+    .partida-titulo2::before {
+      width: 100%;
+      left: 0px;
+      height: 0.3125rem;
+      top: -20px;
+    }
+    .p2-img {
+      grid-row: 2;
+      background: #88002a;
+      height: 240px;
+    }
+
+    .p1-img {
+      background: #88002a;
+      height: 240px;
+    }
+    .p2-texto {
+      background: #00693d;
+    }
+    .noticiastudo {
+      grid-template-columns: 1fr;
+
+      align-items: center;
+      justify-items: center;
+    }
+    .noticias-descricao {
+      justify-self: center;
+      margin-left: 3rem;
+      margin-top: 5rem;
+    }
+    .noticiastudo img {
+      height: 410px;
+      width: 680px;
+    }
+    .noticiastudo p {
+      text-align: center;
+      font-size: 1.25rem;
+      width: 35rem;
+    }
+    .noticiastudo h2 {
+      font-size: 3rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .p1-img img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .p2-img img {
+    width: 300px;
+    height: 200px;
+  }
+  .p1-img {
+    padding: 2.5rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+    /* width: 300px;
+    height: 200px; */
+  }
+
+  .p2-img {
+    padding: 2.5rem 0rem 0rem 0rem;
+    margin: 0rem 0rem;
+    /* width: 300px;
+    height: 200px; */
+  }
+  .partida-texto {
+    font-size: 1.1rem;
+    margin: 2.75rem 2.5rem;
+  }
+}
+@media (max-width: 650px) {
+  .noticiastudo img {
+    height: 310px;
+    width: 500px;
+  }
+  .noticiastudo p {
+    text-align: center;
+    font-size: 1rem;
+    width: 20rem;
+  }
+  .noticiastudo h2 {
+    font-size: 2.75rem;
+    margin-bottom: 2.5rem;
+  }
+  .campeao h1 {
+    width: 91.625rem;
+    top: 20px;
+    color: #eff0f4;
+    text-align: center;
+    text-shadow: 1px 6px 10px #000;
+    font-size: 4rem;
+  }
+  .campeoes {
+    padding: 25px;
+  }
+
+  .campeoes h2 {
+    padding-bottom: 30px;
+
+    font-size: 3rem;
+  }
+
+  .campeoes-texto {
+    font-size: 1rem;
+    font-style: normal;
+
+    padding: 0rem 4rem 4rem 4rem;
+  }
+}
+@media (max-width: 460px) {
+  .noticiastudo img {
+    height: 260px;
+    width: 450px;
+  }
+  .campeao h1 {
+    width: 85rem;
+    top: 20px;
+    font-size: 3.5rem;
+  }
+  .partida-texto {
+    font-size: 0.9rem;
+    margin: 2.5rem 2.35rem;
+  }
+  .partida-titulo {
+    font-size: 1.2rem;
+  }
+  .partida-titulo2 {
+    font-size: 1.2rem;
+  }
+  .partida-titulo::after {
+    top: 230px;
+  }
+  .partida-titulo2::after {
+    top: 230px;
+  }
+  header::before {
+    display: none;
+    position: absolute;
+    background-color: #d9d9d9;
+    width: 2px;
+    height: 100px;
+  }
+  .associe {
+    padding: 10px 20px;
+    margin: 30px 15px 30px 0px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  header {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .FluH {
+    grid-column: 1/3;
+  }
+
+  .LibH {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .noticiastudo img {
+    height: 260px;
+    width: 380px;
+  }
+  .campeao h1 {
+    width: 85rem;
+    top: 20px;
+    font-size: 3rem;
+  }
+  .noticiastudo p {
+    font-size: 0.8rem;
+    width: 15rem;
+  }
+  .noticiastudo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+@media (max-width: 350px) {
+  .campeao h1 {
+    width: 75rem;
+    top: 20px;
+    font-size: 2.5rem;
+  }
+  .campeoes h2 {
+    padding-bottom: 30px;
+
+    font-size: 2.5rem;
+  }
+
+  .campeoes-texto {
+    font-size: 1rem;
+    font-style: normal;
+    padding: 0rem 2rem 3rem 2rem;
+  }
+  .partida-titulo {
+    font-size: 1rem;
+  }
+  .partida-data {
+    font-size: 0.8rem;
+  }
+  .partida-texto {
+    font-size: 0.8rem;
+    margin: 2.5rem 2rem 0rem 1rem;
+  }
+  .partida-titulo::after {
+    display: none;
+  }
+  .partida-titulo2::after {
+    display: none;
+  }
+  .partida-titulo::before {
+    display: none;
+  }
+  .partida-titulo2::before {
+    display: none;
+  }
+}
